@@ -2,12 +2,11 @@ package api
 
 import (
 	"design-patterns/creational/singleton/sessionmanager"
-	"fmt"
 )
 
-func TestApi() {
+func TestApi(email string) string {
 	apiSession := sessionmanager.GetSessionStore()
+	apiSession.Put(email)
 
-	apiSession.Put("ram@test.com")
-	fmt.Println(apiSession.Get("ram@test.com"))
+	return apiSession.Get(email)
 }
