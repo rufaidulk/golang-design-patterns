@@ -2,3 +2,4 @@
 ## Creational
 - Singleton
 - Builder
+- Factory Method
