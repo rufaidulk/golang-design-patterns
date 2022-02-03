@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestSessionUidIsSameForSameDataStoredFromDiffWay(t *testing.T) {
+func TestSessionUidIsSameForSameDataStoredInDiffWay(t *testing.T) {
 	firstSession := sessionmanager.GetSessionStore()
 	firstSession.Put(USER_EMAIL)
 	firstId := firstSession.Get(USER_EMAIL)
